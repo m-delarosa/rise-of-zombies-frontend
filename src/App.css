@@ -47,21 +47,17 @@ table {
 	border-spacing: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tenali+Ramakrishna&display=swap');
+
+/* * {
+  border: 5px solid red;
+} */
 
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
 .App-header {
@@ -72,7 +68,6 @@ table {
   align-items: center;
   justify-content: center;
   font-size: 82px;
-  font-family: 'Tenali Ramakrishna', sans-serif;
   color: whitesmoke;
 }
 
@@ -81,24 +76,57 @@ table {
 
 }
 .Main-container {
- width: 100vw;
- height: 100vh;
+ width: 100%;
+ height: 100%;
  background-color: whitesmoke;
+ display: flex;
+ padding: 20px;
 }
 
 .Favorites {
+  width: 25vw;
+  height: 100%;
+  font-size: 32px;
+}
 
+.Movie-card {
+  width: 75vw;
+  height: 100%;
+  text-align: center;
+  font-size: 32px;
+}
+
+.Movie-card h2 {
+  font-size: 64px;
+}
+
+.Movie-card img {
+  width: 30%;
+}
+.Movie-infobar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Overview {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;;
+}
+
+button {
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 24px;
+  border-radius: 6px;
+  height: 10vh;
+  width: 15vw;
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
