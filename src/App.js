@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import FeaturedMovie from './components/FeaturedMovie'
+import Favorites from './components/Favorites'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-header">
+        <h1>Rise of Zombies</h1>
+        <h4>Find a new zombie movie today.</h4>
+      </div>
+      <div className="Main-container">
+        <Favorites className="Favorites" />
+        <FeaturedMovie className="Movie-card" />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
