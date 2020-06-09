@@ -6,7 +6,7 @@ export default function Favorites(props) {
     }
 
     return (
-        <ul>
+        <ul className="Favorites"> Favorites:
             <li>Movie name</li>
             {showFavorites}
         </ul>
